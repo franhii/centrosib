@@ -1,6 +1,7 @@
 const dbSetup = require("./db/db-setup");
 const express = require("express");
 const Doctor = require("./models/doctor");
+const Specialization = require("./models/specialization");
 
 dbSetup();
 
