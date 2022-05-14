@@ -9,7 +9,11 @@ module.exports = {
       password: process.env.POSTGRES_PASSWORD,
     },
     migrations: {
+      tableName: "knex_migrations",
       directory: "./db/migrations/",
+    },
+    seeds: {
+      directory: "./db/seeds/",
     },
   },
 };
