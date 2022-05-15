@@ -13,7 +13,7 @@ exports.seed = async function (knex) {
       first_name: "Juan",
       last_name: "Lopez",
       professional_statement: "El mejor doctor",
-      image_url: "https://imgur.com/gallery/6QmnGYq",
+      image_url: "assets/juan.jpg",
     },
   ]);
 
