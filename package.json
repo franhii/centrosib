@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-		"make-seed": "npx knex seed:make dev",
+    "make-seed": "npx knex seed:make dev",
     "migrate": "npx knex migrate:latest",
-		"seed": "npx knex seed:run",
+    "seed": "npx knex seed:run",
     "rollback": "npx knex migrate:rollback",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
