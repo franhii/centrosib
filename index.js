@@ -2,7 +2,7 @@ const dbSetup = require("./api/db/db-setup");
 const express = require("express");
 const router = require("./api/routes");
 
-const PORT = 3003;
+const PORT = process.env.PORT;
 
 dbSetup();
 const app = express();
