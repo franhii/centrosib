@@ -35,6 +35,5 @@
       "last 1 safari version"
     ]
   },
-  // Proxy pa que esten conectados el front y el backend
   "proxy": "http://localhost:3000"
 }
