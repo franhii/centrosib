@@ -9,7 +9,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - ./pg-data:/var/lib/postgresql/data
+      - pg-data:/var/lib/postgresql/data
   api:
     container_name: centrosib-api
     build:
@@ -40,5 +40,5 @@ services:
         PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
 
 volumes:
-  db:
+  pg-data:
     driver: local
