@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-const PostDoctor = () => {
+const Especialistas = () => {
 	const [data, setData] = useState(null)
 	const [loading, setLoading] = useState(true)
 	const [error, setError] = useState(null)
@@ -54,4 +54,4 @@ const PostDoctor = () => {
 	)
 }
 
-export default PostDoctor
+export default Especialistas

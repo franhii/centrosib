@@ -1,13 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
-import Navbar from "./components/Navbar.jsx";
-import PostDoctor from "./components/PostDoctor.jsx"
+import { BrowserRouter } from "react-router-dom";
+import App from './App.jsx'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-	<div>
-		<PostDoctor />
-		<Navbar />
-	</div>
+	<BrowserRouter>
+		<App />
+	</BrowserRouter>
 );
