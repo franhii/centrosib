@@ -17,6 +17,16 @@ router.get("/", async (req, res, next) => {
 	}
 });
 
+// Create new doctor
+router.post("/", async (req, res, next) => {
+	try {
+		const doctor = await Doctor.query().insertGraph(req.body)
+		res.json(doctor)
+	} catch (err) {
+		console.error(err)
+	}
+})
+
 router.use("/", doctorRouter);
 
 module.exports = router;

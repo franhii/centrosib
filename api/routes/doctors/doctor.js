@@ -16,7 +16,7 @@ router.get("/:id", async (req, res, next) => {
 	}
 });
 
-router.post("/:id", async (req, res, next) => {
+router.post("/", async (req, res, next) => {
 	try {
 		const doctor = await Doctor.query().insertGraph(req.body)
 		res.json(doctor)
