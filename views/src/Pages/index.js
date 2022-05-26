@@ -1,0 +1,1 @@
+export { default as Especialistas } from './Especialistas/Especialistas.jsx';
