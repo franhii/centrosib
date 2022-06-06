@@ -1,12 +1,14 @@
 import { Route, Routes } from "react-router-dom"
-import { Especialistas } from '../../Pages'
-import { Nosotros } from "../../Pages"
+import { Especialistas, Contacto, Nosotros } from '../../Pages'
 const PagesRoutes = () => {
 	return (
 		<div>
 			<Routes>
 				<Route path="/especialistas"
 					element={<Especialistas />}
+				/>
+				<Route path="/contacto"
+					element={<Contacto />}
 				/>
 				<Route path="/"
 					element={""}
