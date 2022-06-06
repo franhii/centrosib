@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import { Especialistas } from '../../Pages'
+import { Nosotros } from "../../Pages"
 const PagesRoutes = () => {
 	return (
 		<div>
@@ -10,6 +11,7 @@ const PagesRoutes = () => {
 				<Route path="/"
 					element={""}
 				/>
+				<Route path="/nosotros" element={<Nosotros />} />
 			</Routes>
 		</div>
 	)
