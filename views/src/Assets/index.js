@@ -1,0 +1,13 @@
+import { default as banner } from "./img/banner.png";
+import { default as bradcam } from "./img/bradcam.png";
+import { default as consultorio } from "./img/consultorio.jpg";
+import { default as doctor } from "./img/doctor.svg";
+import { default as doctora } from "./img/doctora.png";
+import { default as doctores } from "./img/doctores.png";
+import { default as imageRemoveBgPreview } from "./img/image-removebg-preview.png";
+import { default as odontologia } from "./img/odontologia.jpg";
+import { default as paciente } from "./img/paciente.jpg";
+import { default as phone } from "./img/phone.png";
+import { default as sibRemovebgPreview } from "./img/Sib-removebg-preview.png";
+import { default as sibBanner } from "./img/SibBanner.png";
+import { default as work3 } from "./img/work3.jpg";
