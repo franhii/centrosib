@@ -1,12 +1,13 @@
-import Navbar from './components/Navbar'
-import PagesRoutes from './pages/PagesRoutes.jsx'
+import Navbar from "./Components/Navbar/Navbar";
+import "./App.css";
+import { Home, Skills } from "./Pages";
+import { Nosotros } from "./Pages";
 const App = () => {
-	return (
-		<div>
-			<Navbar />
-			<PagesRoutes />
-		</div>
-	)
-}
+  return (
+    <div>
+      <Navbar /> 
+    </div>
+  );
+};
 
-export default App
+export default App;
