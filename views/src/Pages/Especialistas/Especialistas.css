@@ -1,25 +1,35 @@
 .container {
-  padding-top: 6rem;
-  background-color: aquamarine;
   display: grid;
-  grid-template-rows: 1fr;
-  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
   width: 100%;
 }
 
 .doctor {
   margin: 1rem;
-  border: 1px solid red;
+  border: 1px solid Black;
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .photo {
+	margin-bottom: -0.4rem; /* Parche re cabeza para que no ponga una barra */
   max-width: 100%;
   border-radius: 0.4rem 0.4rem 0 0;
 }
 
-.specializations {
+.bg {
+	background: Black;
+}
+.name {
+	min-height: 4rem;
+	color: whitesmoke;
+}
+.statement {
+	color: whitesmoke;
+	margin: 0;
+}
+.specialization {
+	color: #00F3FF;
+	background: black;
   display: flex;
-  gap: 0.5rem;
   flex-wrap: wrap;
 }

@@ -31,15 +31,14 @@ const Especialistas = () => {
     data.map((d) => (
       <div className="doctor" key={d.id}>
         <img className="photo" src={d.image_url} />
-        <h1 className="name">{`${d.first_name} ${d.last_name}`}</h1>
-        <p className="">{`${d.professional_statement}`}</p>
+        <h1 className="name bg">{`${d.first_name} ${d.last_name}`}</h1>
+        <p className="statement bg">{`${d.professional_statement}`}</p>
 
         {d.specialization && d.specialization.length > 0 && (
-
           <div className="specializations">
             {d.specialization.map((specialization, idx) => (
               <div key={idx}>
-                <h3 key={specialization}>
+                <h3 className="specialization bg" key={specialization}>
                   {specialization.specialization_name}
                 </h3>
               </div>
@@ -49,10 +48,7 @@ const Especialistas = () => {
       </div>
     ));
 
-  return <div>
-    <div className="container">{doctorRenderer}
-    </div>
-  </div>
+  return <div className="container">{doctorRenderer}</div>;
 };
 
 export default Especialistas;
