@@ -1,35 +1,40 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   width: 100%;
+	border-radius: 0.5rem;
 }
 
 .doctor {
+	box-shadow: 5px 10px 8px black;
   margin: 1rem;
   border: 1px solid Black;
-  border-radius: 0.5rem 0.5rem 0 0;
+	border-radius: 0.5rem;
 }
 
 .photo {
-	margin-bottom: -0.4rem; /* Parche re cabeza para que no ponga una barra */
   max-width: 100%;
   border-radius: 0.4rem 0.4rem 0 0;
 }
 
 .bg {
-	background: Black;
+	background: white;
 }
-.name {
-	min-height: 4rem;
-	color: whitesmoke;
+.info {
+	margin: 1rem 1rem 0.2rem 1rem;
 }
-.statement {
-	color: whitesmoke;
-	margin: 0;
+.specialization-name {
+	margin: 1rem 0 0.5rem 0;
+	padding: 0.3rem;
+	background: lightblue;
+	border-radius: 0.3rem;
 }
-.specialization {
-	color: #00F3FF;
-	background: black;
-  display: flex;
-  flex-wrap: wrap;
+.specializations {
+	display: flex;
+	gap: 1rem;
 }
