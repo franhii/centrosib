@@ -1,8 +1,5 @@
-import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-import { MdClose } from "react-icons/md";
-import { FiMenu } from "react-icons/fi";
 import NavLinks from "./NavLinks";
 const Navbar = () => {
   return (
@@ -11,13 +8,14 @@ const Navbar = () => {
         <nav>
           <ul>
             <li>
-              <NavLink to="/especialistas" onClick={() => closeMenu()}>
-                Especialistas
-              </NavLink>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink to="/">Home</NavLink>
-            </li>{" "}
+              <NavLink to="/especialistas">Especialistas</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contacto">Contacto</NavLink>
+            </li>
             <li>
               <NavLink to="/nosotros">Nosotros</NavLink>
             </li>
