@@ -7,7 +7,6 @@ const router = express.Router();
 router.get("/", async (req, res, next) => {
 
 	try {
-		const { id } = req.params;
 		const doctor = await Doctor.query()
 			.withGraphFetched("[specialization]");
 		res.json(doctor);
