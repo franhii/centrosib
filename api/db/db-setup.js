@@ -1,6 +1,6 @@
-const knex = require("knex");
-const knexfile = require("../../knexfile");
-const { Model } = require("objection");
+const knex = require('knex');
+const knexfile = require('../../knexfile');
+const { Model } = require('objection');
 
 const setupDB = () => {
   // Instala la base de datos global dentro de todos los modelos
