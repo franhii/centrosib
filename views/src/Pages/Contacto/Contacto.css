@@ -1,0 +1,55 @@
+#izquierda{
+    width: 300px;
+    height: auto; overflow: hidden;
+    border: 1px solid;
+    float: left;
+}
+
+.texto-contacto{
+    text-align: left;
+}
+
+#derecha{
+    width: 490px;
+    height: auto; overflow: hidden;
+    border: 1px solid;
+    float: right;
+}
+
+.email-contacto{
+    color: #000;
+    text-decoration: none;
+}
+.email-contacto:hover{
+    text-decoration: underline;
+}
+
+input[type="text"], input[type="Email"]{
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    width: 95%;
+    margin-right:auto
+
+}
+textarea{
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    width: 95%; 
+}
+input[type="submit"]{
+    padding: 10px;
+    background: #0489B1;
+    color: white;
+    border: 1px solid #048;
+    border-radius: 5px;
+
+}
+#Mapa{
+    width: 100%;
+    height: auto; overflow: hidden;
+    text-align: center;
+}
