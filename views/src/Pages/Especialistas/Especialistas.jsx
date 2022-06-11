@@ -29,22 +29,24 @@ const Especialistas = () => {
   const doctorRenderer =
     data &&
     data.map((d) => (
-      <div className="doctor" key={d.id}>
+      <div className="doctor bg" key={d.id}>
         <img className="photo" src={d.image_url} />
-        <h1 className="name bg">{`${d.first_name} ${d.last_name}`}</h1>
-        <p className="statement bg">{`${d.professional_statement}`}</p>
+        <div className="info bg">
+          <h1 className="name bg">{`${d.first_name} ${d.last_name}`}</h1>
+          <p className="statement bg">{`${d.professional_statement}`}</p>
 
-        {d.specialization && d.specialization.length > 0 && (
-          <div className="specializations">
-            {d.specialization.map((specialization, idx) => (
-              <div key={idx}>
-                <h3 className="specialization bg" key={specialization}>
-                  {specialization.specialization_name}
-                </h3>
-              </div>
-            ))}
-          </div>
-        )}
+          {d.specialization && d.specialization.length > 0 && (
+            <div className="specializations bg">
+              {d.specialization.map((specialization, idx) => (
+                <div key={idx} className="specialization bg">
+                  <h3 className="specialization-name bg" key={specialization}>
+                    {specialization.specialization_name}
+                  </h3>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
     ));
 
