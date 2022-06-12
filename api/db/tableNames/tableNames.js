@@ -10,4 +10,4 @@ module.exports = {
 	anamnesis_visit: 'anamnesis_visit',
 	anamensis_catalog: 'anamensis_catalog',
 	anamensis_type: 'anamensis_type',
-}
+};
