@@ -1,13 +1,13 @@
 services:
-  web:
-    build: .
-    restart: unless-stopped
-    command: sh -c "npm run migrate && npm run seed && npm run dev"
-    ports:
-      - 3000:3000
-    env_file: .env
-    depends_on:
-      - db
+  # web:
+  #   build: .
+  #   restart: unless-stopped
+  #   command: sh -c "npm run migrate && npm run seed && npm run dev"
+  #   ports:
+  #     - 3000:3000
+  #   env_file: .env
+  #   depends_on:
+  #     - db
   
   db:
     image: postgres:14.3-alpine
