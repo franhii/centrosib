@@ -1,14 +1,14 @@
 const crypto = require('crypto');
 const bcrypt = require('bcrypt');
 
-const tableNames = require('../tableNames/tableNames');
-const orderedTableNames = require('../tableNames/orderedTableNames');
+const tableNames = require('../../../src/constants/tableNames');
 /**
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> }
  */
 
 exports.seed = async (knex) => {
+  // Deletes all previous inserts
   await Promise.all(Object.keys(tableNames).map((name) => knex(name).del()));
 
   const password = crypto.randomBytes(15).toString('hex');
