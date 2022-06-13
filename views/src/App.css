@@ -1,8 +1,65 @@
-*,
-*::before,
-*::after,
+/*===== Golge Font =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+    --header-height: 0.5rem;
+    --font-semi: 600;
+}
+
+
+/*===== Colores =====*/
+:root {
+    --first-color: #4070f4;
+    --second-color: #0E2431;
+}
+
+/*===== Fuentes tipografias =====*/
+:root {
+    --body-font: 'Poppins', sans-serif;
+    --big-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 0.938rem; 
+}
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 3.3rem;
+        --h2-font-size: 2rem;
+        --normal-font-size: 1rem; 
+    }
+    
+}
+
+/*===== Margenes =====*/
+:root {
+    --mb-1: 0.5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+}
+
+/*===== z- Index =====*/
+:root {
+    --z-back: -10;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/*===== base =====*/
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
 body {
-  margin: 0;
-  padding: 0;
-	background: gray
+    background-color: rgba(212, 212, 212, 0.356);
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--second-color);
 }
