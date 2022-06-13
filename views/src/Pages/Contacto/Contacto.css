@@ -1,74 +1,79 @@
-.contacto{
-    font-family: 'Alfa Slab One', cursive;
-    margin-left: 20%;
-    border-left: 3px solid;
-    border-color: blue;
-
+#nav {
+  height: 40%;
+  border: 1px solid;
 }
-#izquierda{
-    width: 300px;
-    height: auto; overflow: hidden;
-    
-    float: left;
+#contenido {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 50%;
+  width: 100%;
 }
-
-.texto-contacto{
-    text-align: center;
+#izquierda {
+  text-align: center;
+  border-right: 1px red solid;
 }
-
-#derecha{
-    width: 490px;
-    height: auto; overflow: hidden;
-    border: 1px solid;
-    float: right;
+#derecha {
+  text-align: center;
 }
-
-.email-contacto{
-    color: #000;
-    text-decoration: none;
+#footer {
+  border: 1px solid;
 }
-.email-contacto:hover{
-    text-decoration: underline;
+.contacto {
+  font-family: var(--body-font);
+  margin-left: 20%;
+  border-left: 3px solid;
+  border-color: blue;
 }
 
-input[type="text"], input[type="Email"]{
-    border: 1px solid #ccc;
-    padding: 5px;
-    border-radius: 5px;
-    margin: 5px;
-    width: 95%;
-    margin-right:auto
+.texto-contacto {
+  text-align: center;
+}
 
+.email-contacto {
+  color: #000;
+  text-decoration: none;
 }
-textarea{
-    border: 1px solid #ccc;
-    padding: 5px;
-    border-radius: 5px;
-    margin: 5px;
-    width: 95%; 
+.email-contacto:hover {
+  text-decoration: underline;
 }
-input[type="submit"]{
-    padding: 10px;
-    background: #0489B1;
-    color: white;
-    border: 1px solid #048;
-    border-radius: 5px;
-    text-align: center;
 
+input[type='text'],
+input[type='Email'] {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+  width: 95%;
+  margin-right: auto;
 }
-#Mapa{
-    width: 50%;
-    height: auto; overflow: hidden;
-    text-align: center;
-    margin-top: 20%;
-    position: absolute;
+textarea {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+  width: 95%;
 }
-#contacto{
-    background-image: url(C:\Users\Andy\Desktop\SIB\centrosib\centrosib\views\src\Assets\img\odontologo.jpg);
-    min-height: 100vh;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed; 
-    position: relative;    
+input[type='submit'] {
+  padding: 10px;
+  background: #0489b1;
+  color: white;
+  border: 1px solid #048;
+  border-radius: 5px;
+  text-align: center;
+}
+#Mapa {
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 20%;
+  position: absolute;
+}
+#contacto {
+  background-image: url('../../Assets/img/odontologia.jpg');
+  min-height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
 }
