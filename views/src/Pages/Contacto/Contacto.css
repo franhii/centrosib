@@ -1,12 +1,19 @@
+.contacto{
+    font-family: 'Alfa Slab One', cursive;
+    margin-left: 20%;
+    border-left: 3px solid;
+    border-color: blue;
+
+}
 #izquierda{
     width: 300px;
     height: auto; overflow: hidden;
-    border: 1px solid;
+    
     float: left;
 }
 
 .texto-contacto{
-    text-align: left;
+    text-align: center;
 }
 
 #derecha{
@@ -50,9 +57,11 @@ input[type="submit"]{
 
 }
 #Mapa{
-    width: 100%;
+    width: 50%;
     height: auto; overflow: hidden;
     text-align: center;
+    margin-top: 20%;
+    position: absolute;
 }
 #contacto{
     background-image: url(C:\Users\Andy\Desktop\SIB\centrosib\centrosib\views\src\Assets\img\odontologo.jpg);
@@ -61,15 +70,5 @@ input[type="submit"]{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; 
-    background: linear-gradient(90deg blue,green);
-    opacity: 1;   
-}
-.contactoDeg{
-    content: "";
-    width: 100%;
-    min-height: 100vh;
-    position: absolut;
-    top: 0;
-    left: 0;
-    
+    position: relative;    
 }
