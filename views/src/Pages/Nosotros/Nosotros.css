@@ -1,6 +1,11 @@
 .about__container {
     row-gap: 2rem;
     text-align: center;
+    color: var(--first-color);
+}
+
+p {
+    color: black;
 }
 
 .about__subtitle {
