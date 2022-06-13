@@ -1,11 +1,11 @@
-const express = require("express");
+const express = require('express');
 
-const doctorsRouter = require("./doctors");
+const doctorsRouter = require('./doctors');
 const router = express.Router();
 
-router.use("/api/v1/doctors", doctorsRouter);
-router.use("/", (req, res) => {
-	res.json({Estado: "Conectado papichurro"})
+router.use('/api/v1/doctors', doctorsRouter);
+router.use('/', (req, res) => {
+  res.json({ Estado: 'Conectado' });
 });
 
 module.exports = router;

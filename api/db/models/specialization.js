@@ -1,8 +1,8 @@
-const { Model } = require("objection");
+const { Model } = require('objection');
 
 class Specialization extends Model {
   static get tableName() {
-    return "specialization";
+    return 'specialization';
   }
 }
 

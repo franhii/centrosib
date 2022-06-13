@@ -1,44 +1,30 @@
 services:
+  # web:
+  #   build: .
+  #   restart: unless-stopped
+  #   command: sh -c "npm run migrate && npm run seed && npm run dev"
+  #   ports:
+  #     - 3000:3000
+  #   env_file: .env
+  #   depends_on:
+  #     - db
+  
   db:
-    image: postgres:14.2-alpine
-    restart: always
+    image: postgres:14.3-alpine
+    restart: unless-stopped
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}
     ports:
-      - "5432:5432"
+      - 5432:5432
     volumes:
-      - pg-data:/var/lib/postgresql/data
-  api:
-    container_name: centrosib-api
-    build:
-      context: ./
-      target: dev
-    image: centrosib-api
-    depends_on:
-      - db
-    ports:
-      - 3000:3000
-    environment:
-      NODE_ENV: dev
-      DB_HOST: db
-    links:
-      - db
-    volumes:
-      - ./:/src
-      - /src/node_modules
-  pgadmin:
-      depends_on:
-        - db
-      image: dpage/pgadmin4
-      restart: always
-      ports:
-        - "5050:80"
-      environment:
-        PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
-        PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
+      - db-data:/var/lib/postgresql/data
 
+  adminer:
+    image: adminer
+    restart: unless-stopped
+    ports:
+      - 8080:8080
 volumes:
-  pg-data:
-    driver: local
+  db-data:
