@@ -1,47 +1,19 @@
 import React from 'react'
 import './Nosotros.css'
-import { doctores } from '../../Assets';
-import Carousel from 'react-material-ui-carousel'
-import { Paper, Button } from '@mui/material'
-function Nosotros(props) {
-    var items = [
-        {
-            name: "Random Name #1",
-            description: "Probably the most random thing you have ever seen!"
-        },
-        {
-            name: "Random Name #2",
-            description: "Hello World!"
-        }
-    ]
-
-    return (
-        <Carousel>
-            {
-                items.map( (item, i) => <Item key={i} item={item} /> )
-            }
-        </Carousel>
-    )
-}
-
-function Item(props)
-{
-    return (
-        <Paper>
-            <h2>{props.item.name}</h2>
-            <p>{props.item.description}</p>
-
-            <Button className="CheckButton">
-                Check it out!
-            </Button>
-        </Paper>
-    )
+import { doctores, slider1,slider2,slider3,slider4 } from '../../Assets'; /* Asi importamos imagenes */
+function Nosotros() {
     return (
         <div>
             <div> <h1>Sobre nosotros</h1></div>
             <br />
-            <div className='doc'><img src={doctores}alt=""/></div>
-            <div>
+            <div className='doc'><img src={doctores}alt=""/></div>   
+            <div className="carrusel">
+                <div className="grande">
+                    <img src={slider1} alt="imagen 1" className="img"/>
+                    <img src="#" alt="imagen 2" className="img"/>
+                </div>
+            </div>
+            <div >
                 <h3>Los orígenes de CentroSib se remontan al año 1950,
                     cuando un grupo de prestigiosos profesionales de la Odontología se agrupan.
                     Con la llegada del nuevo milenio, esta unión se potenció,

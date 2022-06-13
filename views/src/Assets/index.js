@@ -11,3 +11,7 @@ export { default as phone } from './img/phone.png';
 export { default as sibRemovebgPreview } from './img/Sib-removebg-preview.png';
 export { default as sibBanner } from './img/SibBanner.png';
 export { default as work3 } from './img/work3.jpg';
+export {default as slider1} from './img/CentroSib1-900x600.png'
+export {default as slider2} from './img/CentroSib-2-900x600.png'
+export {default as slider3} from './img/CentroSib-3-900x600.png'
+export {default as slider4} from './img/CentroSib-4-900x600.png'
