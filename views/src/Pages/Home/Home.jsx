@@ -17,9 +17,9 @@ const Home
                 Contact
               </a>
             </div>
-            
+
             <div class='home__social'>
-              <a href='#' class='home__social-icon'>
+              <a href='https://www.instagram.com/' target={"_blank"} class='home__social-icon'>
                 <i class='bx bxl-instagram'></i>
               </a>
               <a href='#' class='home__social-icon'>
