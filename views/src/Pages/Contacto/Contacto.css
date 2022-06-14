@@ -64,7 +64,7 @@ input[type="submit"]{
     position: absolute;
 }
 #contacto{
-    background-image: url(C:\Users\Andy\Desktop\SIB\centrosib\centrosib\views\src\Assets\img\odontologo.jpg);
+   /*  background-image: url(C:\Users\Andy\Desktop\SIB\centrosib\centrosib\views\src\Assets\img\odontologo.jpg); */
     min-height: 100vh;
     background-position: center center;
     background-repeat: no-repeat;
