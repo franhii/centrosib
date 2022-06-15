@@ -1,60 +1,93 @@
-.contacto{
-    font-family: 'Alfa Slab One', cursive;
-    margin-left: 20%;
-    border-left: 3px solid;
-    border-color: blue;
+#nav {
+  height: 40%;
+  border: 1px solid;
+}
+#contenido {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 50%;
+  width: 100%;
+}
+#izquierda {
+  text-align: center;
+  border-right: 1px red solid;
+}
+#derecha {
+  margin-top: 30%;
+  text-align: center;
+  height: 100%;
+}
+#footer {
+  border: 1px solid;
+}
+.contacto:before{
+  content: "";
+  background: rgb(54, 51, 51);
+  opacity: 50%
+}
+.contacto {
+  font-family: var(--body-font);
 
 }
-#izquierda{
-    width: 300px;
-    height: auto; overflow: hidden;
-    
-    float: left;
+h1{
+  margin-left: 40%;
+  text-align: left;
+  border-left: 3px solid;
+  border-color: blue;
 }
 
-.texto-contacto{
-    text-align: center;
+.texto-contacto {
+  text-align: center;
 }
 
-#derecha{
-    width: 490px;
-    height: auto; overflow: hidden;
-    border: 1px solid;
-    float: right;
+.email-contacto {
+  color: #000;
+  text-decoration: none;
+}
+.email-contacto:hover {
+  text-decoration: underline;
 }
 
-.email-contacto{
-    color: #000;
-    text-decoration: none;
+input[type='text'],
+input[type='Email'] {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+  width: 95%;
+  height: 100%;
+  margin-right: auto;
 }
-.email-contacto:hover{
-    text-decoration: underline;
+textarea {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+  width: 95%;
 }
-
-input[type="text"], input[type="Email"]{
-    border: 1px solid #ccc;
-    padding: 5px;
-    border-radius: 5px;
-    margin: 5px;
-    width: 95%;
-    margin-right:auto
-
+input[type='submit'] {
+  padding: 10px;
+  background: #0489b1;
+  color: white;
+  border: 1px solid #048;
+  border-radius: 5px;
+  text-align: center;
 }
-textarea{
-    border: 1px solid #ccc;
-    padding: 5px;
-    border-radius: 5px;
-    margin: 5px;
-    width: 95%; 
+#Mapa {
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 20%;
+  position: absolute;
 }
-input[type="submit"]{
-    padding: 10px;
-    background: #0489B1;
-    color: white;
-    border: 1px solid #048;
-    border-radius: 5px;
-    text-align: center;
-
+#contacto {
+  background-image: url('../../Assets/img/dentistaAbajo.jpg');
+  min-height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
 }
 #Mapa{
     width: 50%;
@@ -63,12 +96,4 @@ input[type="submit"]{
     margin-top: 20%;
     position: absolute;
 }
-#contacto{
-   /*  background-image: url(C:\Users\Andy\Desktop\SIB\centrosib\centrosib\views\src\Assets\img\odontologo.jpg); */
-    min-height: 100vh;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed; 
-    position: relative;    
-}
+   

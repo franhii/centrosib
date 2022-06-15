@@ -1,11 +1,17 @@
 import Navbar from "./Components/Navbar/Navbar";
 import "./App.css";
-import { Home, Skills } from "./Pages";
-import { Nosotros } from "./Pages";
+import { Helmet } from 'react-helmet';
+
 const App = () => {
   return (
     <div>
-      <Navbar /> 
+      <Helmet>
+        <link
+          href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css'
+          rel='stylesheet'
+        />
+      </Helmet>
+      <Navbar />
     </div>
   );
 };
