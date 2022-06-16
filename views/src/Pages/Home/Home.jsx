@@ -1,7 +1,8 @@
 
 import React from 'react'
 import './Home.css';
-import {sibBanner} from "../../Assets/"
+import {sibBanner, consultorio} from "../../Assets/"
+
 
 const Home
     = () => {
@@ -31,7 +32,23 @@ const Home
             <div className='home__img'>
               <img src={sibBanner} alt='banner sib' />
             </div>
+
+            <section>
+                <div className="profile_card">
+                  <img  src={consultorio} alt="" />
+                  <button class="toggle-btn" id='toggleBtn'>
+                    <i class='fas fa-arrow-up'></i>
+                  </button>
+                  <div className="info" id='info'>
+                  </div>
+                  <h4 class="name">Pedrito Perez</h4>
+                  <p class="profession">Odontologo de tu vieja</p>
+                </div>
+            </section>
+
           </section>
+          
+         
         );
     }
 export default Home;
