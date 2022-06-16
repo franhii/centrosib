@@ -27,7 +27,7 @@
 
 .title {
     color: #eee;
-    font-family: sans-serif;
+    font-family:'Poppins' sans-serif;
     font-size: 36px;
     font-weight: 600;
     margin-top: 30px;
@@ -36,7 +36,7 @@
 
 .subtitle {
     color: #eee;
-    font-family: sans-serif;
+    font-family:'Poppins' sans-serif;
     font-size: 16px;
     font-weight: 600;
     margin-top: 10px;
