@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import './Contacto.css';
 
@@ -6,15 +7,8 @@ const Contacto = () => {
     <div id='contacto'>
       <div class="contacto" ><h1>Contacto</h1></div>
       <div id='nav'>
-        <p class='texto-contacto'>
-         {/* Celular: <strong>3462-518748</strong> */} 
-          <strong class="direccion">Av. Estrugamou 250, Venado Tuerto, Santa Fe.</strong>
-          {/* Email:
-          <strong>
-            <a href='centrocib@gmail.com' class='email-contacto'>
-              centrocib@gmail.com
-            </a>
-          </strong>*/}
+        <p class='texto-contacto'> 
+          <strong class="direccion"><link reel="stylesheet" href="'../../Assets/icon/geoCerca.ico"></link>Av. Estrugamou 250, Venado Tuerto, Santa Fe.</strong>
         </p>
       </div>
       <div id='contenido'>
@@ -52,7 +46,14 @@ const Contacto = () => {
         </div>
       </div>
       <div id='footer'>
-        <footer>footer</footer>
+        <footer><link reel="stylesheet" href="'../../Assets/icon/whatsapp.svg"></link><h2>Celular: <strong>3462-518748</strong></h2>
+        <h2>Email:
+          <strong>
+            <a href='centrocib@gmail.com' class='email-contacto'>
+              centrocib@gmail.com
+            </a>
+          </strong></h2>
+        </footer>
       </div>
     </div>
   );

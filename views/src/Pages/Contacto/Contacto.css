@@ -20,20 +20,14 @@
 #footer {
   border: 1px solid;
 }
-.contacto:before{
-  content: "";
-  background: rgb(54, 51, 51);
-  opacity: 50%
-}
-.contacto {
-  font-family: var(--body-font);
-
-}
 h1{
+  font-family: var(--body-font);
+  color: rgb(255, 255, 255) !important;
+  opacity: 1;
   margin-left: 40%;
   text-align: left;
   border-left: 3px solid;
-  border-color: blue;
+  border-color: blue; 
 }
 
 .texto-contacto {
@@ -73,13 +67,6 @@ input[type='submit'] {
   border-radius: 5px;
   text-align: center;
 }
-#Mapa {
-  border-radius: 20px;
-  overflow: hidden;
-  text-align: center;
-  margin-top: 20%;
-  position: absolute;
-}
 #contacto {
   background-image: url('../../Assets/img/dentistaAbajo.jpg');
   min-height: 100vh;
@@ -87,7 +74,7 @@ input[type='submit'] {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  position: relative;
+  position: absolute;
 }
 #Mapa{
     width: 50%;
@@ -95,5 +82,6 @@ input[type='submit'] {
     text-align: center;
     margin-top: 20%;
     position: absolute;
+    border-radius: 20px;
 }
    
