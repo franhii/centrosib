@@ -11,3 +11,6 @@ export { default as phone } from './img/phone.png';
 export { default as sibRemovebgPreview } from './img/Sib-removebg-preview.png';
 export { default as sibBanner } from './img/SibBanner.png';
 export { default as work3 } from './img/work3.jpg';
+export { default as mensaje } from './icon/mensaje.svg';
+export { default as whatsapp } from './icon/whatsapp.svg';
+export { default as geoCerca } from './icon/geoCerca.svg';
